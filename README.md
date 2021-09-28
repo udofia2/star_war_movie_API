@@ -89,7 +89,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-UDOFIA ABASIODONG - Portfolio: [Odiong](https://udofia.herokuapp.com) - udofia Portfolio
+UDOFIA ABASIODONG - Portfolio: [Odiong](https://udofia.herokuapp.com) - [udofia Portfolio](https://udofia.herokuapp.com)
 
 Project Link: [https://github.com/udofia2/star_war_movie_API](https://github.com/udofia2/star_war_movie_API)
 

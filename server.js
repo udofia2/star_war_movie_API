@@ -14,8 +14,8 @@ app.use('/api/v1', film)
 app.get('/', (req, res) => {
 
   res.status(200).json({
-    status: success,
-    msg: `Please use the endpoints /films or /film/:filmID or /film/character/?sort=value to have access to the movies`,
+    status: "success",
+    msg: `Please use the endpoints /api/v1/films or /api/v1/ilm/:filmID or /api/v1/film/character/?sort=value to have access to the movies`,
     data: "sorry no movie here"
   })
 })

@@ -25,13 +25,14 @@
         films: await Promise.all(result.results.map(async r => {
           return {
             status: 'success',
-            data: { movie_name: r.title,
-            release_date: r.release_date,
-            character_total_number: r.characters.length,
-            opening_crawl: r.opening_crawl.replace(/\r\n/gi, ' '),
-            characters: await Promise.all(r.characters.map(async c => await starwarsFilms(c)))
+            data: {
+              movie_name: r.title,
+              release_date: r.release_date,
+              character_total_number: r.characters.length,
+              opening_crawl: r.opening_crawl.replace(/\r\n/gi, ' '),
+              characters: await Promise.all(r.characters.map(async c => await starwarsFilms(c)))
+            }
           }
-        }
         }))
       })
 
