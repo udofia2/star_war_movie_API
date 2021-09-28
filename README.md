@@ -55,7 +55,6 @@ This are list of things you need to need to get installed.
    ```
 
 
-
 ## Usage
 
 This project can be tested using postman, insomnia etc.
@@ -70,7 +69,7 @@ available routes are
 While testing the route, Please be patient with the /films route if you have slow internet connection. This endpoint takes a little longer to resolve all the promises. Though everything happens in seconds.
 
 
-_For more examples, please refer to the [Documentation](https://documenter.getpostman.com/view/7592361/TzJphfHj)
+_For more examples, please refer to the [Documentation](https://documenter.getpostman.com/view/7592361/UUxzC8BJ)
 
 ## Contributing
 
@@ -90,11 +89,11 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-UDOFIA ABASIODONG - Portfolio: [Odiong](https://udofia.herokuapp.com) - enalsy22@gmail.com
+UDOFIA ABASIODONG - Portfolio: [Odiong](https://udofia.herokuapp.com) - udofia Portfolio
 
 Project Link: [https://github.com/udofia2/star_war_movie_API](https://github.com/udofia2/star_war_movie_API)
 
-Documentation: [Documentation](https://documenter.getpostman.com/view/7592361/TzJphfHj)
+Documentation: [Documentation](https://documenter.getpostman.com/view/7592361/UUxzC8BJ)
 
 
 ## ScreenShoots
