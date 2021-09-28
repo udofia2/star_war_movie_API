@@ -26,19 +26,17 @@ const CharacterHandler = async (req, res) => {
       }
 
       if(filterParam){
-        filterHandler(characterFetch, filterParam)
+        return filterHandler(characterFetch, filterParam)
       }
 
     }
-
-    console.log("sort params is : ", sortParam)
 
     res.status(200).json({
       status: 'success',
       "ip address": req.ips.length > 0 ? req.ips : req.ip,
       total_characters: characterFetch.length,
       total_height: heightHandler(characterFetch),
-      data: printResult()
+      data: (filterParam || sortParam)? printResult() : characterFetch
     })
 
   } catch (error) {
