@@ -12,7 +12,6 @@ const CharacterHandler = async (req, res) => {
   } = Sort()
 
   try {
-
     const result = await starwarsFilms(`https://swapi.dev/api/films/${req.params.filmID}`)
 
     let characterFetch = await Promise.all(result.characters.map(async c => await starwarsFilms(c)))
