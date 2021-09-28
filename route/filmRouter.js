@@ -12,7 +12,7 @@ router
   .route('/films')
   .get(AllFilmsController)
 router
-.route('film/:filmID/character')
+.route('/film/:filmID/character')
 .get(CharacterHandler)
 router
   .route('/film/:id')
