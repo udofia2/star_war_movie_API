@@ -12,11 +12,11 @@ router
   .route('/films')
   .get(AllFilmsController)
 router
-.route('/film/character')
+.route('film/:filmID/character')
 .get(CharacterHandler)
 router
-//   .route('/film/:id')
-//   .get(singleFilmHandler)
+  .route('/film/:id')
+  .get(singleFilmHandler)
 
 
 export default router

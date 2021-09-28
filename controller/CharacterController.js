@@ -13,9 +13,7 @@ const CharacterHandler = async (req, res) => {
 
   try {
 
-    // var searchParams = new URLSearchParams("c=4&a=2&b=3&a=1");
-
-    const result = await starwarsFilms("https://swapi.dev/api/films/1")
+    const result = await starwarsFilms(`https://swapi.dev/api/films/${req.params.filmID}`)
 
     let characterFetch = await Promise.all(result.characters.map(async c => await starwarsFilms(c)))
 
