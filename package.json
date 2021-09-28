@@ -5,7 +5,7 @@
   "main": "sw.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server",
+    "start": "nodemon server",
     "dev": "nodemon server --trace-warnings"
   },
   "keywords": [],
@@ -16,6 +16,9 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "node-fetch": "^3.0.0"
+  },
+  "engines": {
+    "node": "14x"
   },
   "type": "module"
 }
