@@ -8,13 +8,14 @@ const sortHandler = () => {
      return names
   }
 
-  const sortByGender = (gender) => {
-     gender.sort((a, b) => {
-       if (a.gender.toLowerCase() < b.gender.toLowerCase()) return -1
-       if (b.gender.toLowerCase() > a.gender.toLowerCase()) return 1
+  const sortByGender = (gender, opt) => {
+     return gender.sort((a, b) => {
+       b = opt
+       if (a.gender.toLowerCase() === b.toLowerCase()) return -1
+       if (b.toLowerCase() > a.gender.toLowerCase()) return 1
        return 0
      })
-     return names
+     
   }
 
   const sortByHeight = (height) => {

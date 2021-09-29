@@ -21,7 +21,7 @@ const CharacterHandler = async (req, res) => {
 
     const printResult = () => {
       if(sortParam){
-        return (sortParam === "name") ? sortByName(characterFetch) : (sortParam === "gender") ? sortByGender(characterFetch) : (sortParam === 'height') ? sortByHeight(characterFetch) : 'wrong sort param'
+        return (sortParam === "name") ? sortByName(characterFetch) : (sortParam === "gender") ? sortByGender(characterFetch, req.query.sort) : (sortParam === 'height') ? sortByHeight(characterFetch) : 'wrong sort param'
       }
 
       if(filterParam){
